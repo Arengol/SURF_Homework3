@@ -5,6 +5,8 @@ import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -28,6 +30,6 @@ class MainActivity : AppCompatActivity() {
         val lastName = intent?.getStringExtra(USER_LAST_NAME)
         //val age = intent?.getStringExtra(USER_AGE) // По заданию не сказано что это надо показывать
         if (!firstName.isNullOrEmpty() or !firstName.isNullOrEmpty())
-            findViewById<TextView>(R.id.userInfoTV).setText("Добро пожаловать, $firstName $lastName")
+            Toast.makeText(this,"Добро пожаловать, $firstName $lastName", LENGTH_SHORT).show()
     }
 }
