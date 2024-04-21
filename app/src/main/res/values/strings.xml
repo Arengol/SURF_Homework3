@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SURF Homework 3</string>
+    <string name="Hello">Здравствуйте</string>
+    <string name="Start_registration">Начать регистрацию</string>
+    <string name="First_Name">Имя</string>
+    <string name="Cancel">Закрыть</string>
+    <string name="Back">Назад</string>
+    <string name="Continue">Далее</string>
+    <string name="Last_Name">Фамилия</string>
+    <string name="Age">Возраст</string>
+</resources>
