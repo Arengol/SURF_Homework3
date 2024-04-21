@@ -47,7 +47,7 @@
             android:id="@+id/lastNameContinueBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
+            android:layout_marginLeft="20dp"
             android:text="@string/Continue" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

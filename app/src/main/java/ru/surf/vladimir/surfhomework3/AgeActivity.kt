@@ -17,11 +17,11 @@ class AgeActivity : AppCompatActivity() {
         findViewById<Button>(R.id.ageContinueBtn).setOnClickListener {
             val userFirstName = intent.extras?.getString(USER_FIRST_NAME)
             val userLastName = intent.extras?.getString(USER_LAST_NAME)
-            val result = Intent(this, MainActivity::class.java)
-            result.putExtra(USER_FIRST_NAME, userFirstName)
-            result.putExtra(USER_LAST_NAME, userLastName)
-            result.putExtra(USER_AGE, findViewById<EditText>(R.id.ageET).text.toString())
-            startActivity(result)
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra(USER_FIRST_NAME, userFirstName)
+            intent.putExtra(USER_LAST_NAME, userLastName)
+            intent.putExtra(USER_AGE, findViewById<EditText>(R.id.ageET).text.toString())
+            startActivity(intent)
         }
         findViewById<Button>(R.id.ageBackBtn).setOnClickListener {
             finish()

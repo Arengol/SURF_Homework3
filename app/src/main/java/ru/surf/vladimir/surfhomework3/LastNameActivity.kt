@@ -15,7 +15,6 @@ class LastNameActivity : AppCompatActivity() {
             val intent = Intent(this, AgeActivity::class.java)
             intent.putExtra(USER_FIRST_NAME, userFirstName)
             intent.putExtra(USER_LAST_NAME, findViewById<EditText>(R.id.lastNameET).text.toString())
-            intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT)
             startActivity(intent)
         }
         findViewById<Button>(R.id.lastNameCancelBtn).setOnClickListener {
